@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freakworld3d — Impresiones 3D</title>
+  <meta name="description" content="Freakworld3d: mundo impreso en 3D. Diseños, impresiones y productos personalizados en filamento 3D." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>Freakworld3d</span>
+      </div>
+      <div class="links" role="navigation" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#comprar">Comprar</a>
+        <a class="cta" href="https://instagram.com/freakworld3d" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Freakworld3d">
+          Instagram @freakworld3d
+        </a>
+      </div>
+      <button class="menu-btn" onclick="document.querySelector('.links')?.classList.toggle('open')">Menú</button>
+    </div>
+  </nav>
+
+  <!-- Hero / Inicio -->
+  <header id="inicio" class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="kicker">Impresión 3D • Filamento • Diseño</div>
+        <h1 class="title">Un mundo <span style="background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent">impreso</span> en 3D</h1>
+        <p class="lead">
+          Bienvenido a <strong>Freakworld3d</strong>. Creamos piezas personalizadas, prototipos y objetos de colección impresos en
+          filamento. Si lo imaginas, lo imprimimos.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#comprar">Ver productos</a>
+          <a class="btn secondary" href="https://instagram.com/freakworld3d" target="_blank" rel="noopener">Hablar por Instagram</a>
+        </div>
+      </div>
+
+      <!-- Ilustración: "mundo impreso en filamento 3D" (SVG) -->
+      <div class="card">
+        <div class="canvas" aria-label="Ilustración de mundo hecho de filamento 3D">
+          <img src="assets/world3d.svg" alt="Mundo impreso en filamento 3D" />
+        </div>
+        <div class="caption">Ilustración: “un mundo impreso en filamento 3D”.</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Comprar -->
+  <section id="comprar" class="section">
+    <h2>Comprar</h2>
+    <p class="lead">Productos impresos en 3D listos para llevar. Escríbenos por Instagram para personalización y pedidos.</p>
+
+    <div class="grid">
+      <article class="product">
+        <div class="thumb">Soporte de Auriculares</div>
+        <div class="tags">
+          <span class="tag">PLA</span>
+          <span class="tag">Personalizable</span>
+          <span class="tag">Colores</span>
+        </div>
+        <div class="price">€22</div>
+        <a class="buy" href="https://instagram.com/freakworld3d" target="_blank" rel="noopener">Comprar por Instagram</a>
+      </article>
+
+      <article class="product">
+        <div class="thumb">Organizador Modular</div>
+        <div class="tags">
+          <span class="tag">PETG</span>
+          <span class="tag">Taller / Escritorio</span>
+          <span class="tag">Apilable</span>
+        </div>
+        <div class="price">€18</div>
+        <a class="buy" href="https://instagram.com/freakworld3d" target="_blank" rel="noopener">Comprar por Instagram</a>
+      </article>
+
+      <article class="product">
+        <div class="thumb">Maceta Low-Poly</div>
+        <div class="tags">
+          <span class="tag">PLA Silk</span>
+          <span class="tag">Deco</span>
+        </div>
+        <div class="price">€14</div>
+        <a class="buy" href="https://instagram.com/freakworld3d" target="_blank" rel="noopener">Comprar por Instagram</a>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div>© <span id="y"></span> Freakworld3d · Todos los derechos reservados</div>
+    <div class="socials">
+      <a class="pill" href="https://instagram.com/freakworld3d" target="_blank" rel="noopener" aria-label="Instagram">@freakworld3d</a>
+    </div>
+    <div class="legal">Hecho con ❤️ y filamento.</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
